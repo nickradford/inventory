@@ -1,0 +1,9 @@
+<div id="items"></div>
+
+<script type="text/javascript">
+  $(function() {
+    // Blog is the app name
+    window.router = new Inventory.Routers.ItemsRouter({items: <%= @items.to_json.html_safe -%>});
+    Backbone.history.start();
+  });
+</script>

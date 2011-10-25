@@ -1,0 +1,25 @@
+<h1>Edit item</h1>
+
+<form id="edit-item" name="item">
+  <div class="field">
+    <label for="name"> name:</label>
+    <input type="text" name="name" id="name" value=<%= name %> >
+  </div>
+
+  <div class="field">
+    <label for="properties"> properties:</label>
+    <input type="text" name="properties" id="properties" value=<%= properties %> >
+  </div>
+
+  <div class="field">
+    <label for="hash"> hash:</label>
+    <input type="text" name="hash" id="hash" value=<%= hash %> >
+  </div>
+
+  <div class="actions">
+    <input type="submit" value="Update Item" />
+  </div>
+
+</form>
+
+<a href="#/index">Back</a>
